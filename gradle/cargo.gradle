@@ -1,0 +1,16 @@
+apply plugin: 'cargo'
+
+cargo {
+    containerId = 'tomcat7x'
+    port = 8080
+
+    deployable {
+        context = "ROOT"
+    }
+
+    remote {
+        hostname= 'localhost'
+        username = 'arahansa'
+        password = 'arahansa'
+    }
+}

@@ -2,9 +2,20 @@ apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
 apply plugin: 'idea'
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.gradle.api.plugins:gradle-cargo-plugin:0.6.1'
+    }
+}
+war.archiveName='ROOT.war'
 
 
+apply from :'./gradle/cargo.gradle'
 apply from :'./gradle/lib.gradle'
+apply from :'./gradle/profile.gradle'
 
 buildDir = 'build'
 //자바 버젼

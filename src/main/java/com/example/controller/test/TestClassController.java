@@ -1,4 +1,4 @@
-package com.example.controller;
+package com.example.controller.test;
 
 import com.example.domain.TestClass;
 import com.example.repository.TestClassRepository;
