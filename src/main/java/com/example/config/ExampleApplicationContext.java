@@ -27,6 +27,7 @@ public class ExampleApplicationContext {
         return messageSource;
     }
 
+    // TODO PropertySourcesPlaceholderConfigurer 은 static 으로 잡아주세요..
     @Bean
     public PropertySourcesPlaceholderConfigurer propertyPlaceHolderConfigurer() {
         return new PropertySourcesPlaceholderConfigurer();
