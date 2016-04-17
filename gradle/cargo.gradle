@@ -5,11 +5,11 @@ cargo {
     port = 8080
 
     deployable {
-        context = "ROOT"
+        context = "/"
     }
 
     remote {
-        hostname= 'localhost'
+        hostname= '127.0.0.1'
         username = 'arahansa'
         password = 'arahansa'
     }

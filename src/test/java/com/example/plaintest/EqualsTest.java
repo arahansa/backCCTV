@@ -12,7 +12,7 @@ import java.util.function.Supplier;
  */
 public class EqualsTest {
 
-    final static long times = 9000000000l;
+    final static long times = 1;
     final static String testString = "aslkdfjlkasjzxjcklvajskldfjsa";
 
     @Test
